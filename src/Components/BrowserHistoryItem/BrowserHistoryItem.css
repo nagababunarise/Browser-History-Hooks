@@ -1,0 +1,64 @@
+.item-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 3% 20px 5%;
+}
+.item-container p {
+  font-weight: 800;
+  font-size: 13px;
+  color: #475569;
+}
+.browser-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.browser-card img {
+  height: 25px;
+  width: 25px;
+  margin: 10px 10px 10px 40px;
+}
+.browser-content {
+  display: flex;
+  align-items: center;
+}
+.browser-content h1 {
+  color: #434446;
+  font-size: 15px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+.browser-content {
+  font-weight: 600;
+}
+.delete-icon {
+  margin-left: auto;
+}
+.content-responsive {
+  display: flex;
+  align-items: center;
+}
+/* Extra Small (size < 576px) and Small (size >= 576px) Media quires */
+@media screen and (max-width: 576px) {
+  .item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .item-container p {
+    font-size: 10px;
+  }
+  .browser-card {
+    display: flex;
+  }
+  .browser-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .delete-icon {
+    margin-bottom: auto;
+  }
+}
